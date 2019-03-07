@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crystal Game Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+</head>
+<body>
+
+        <div class="container-fluid w-75 m-4 mx-auto">
+                
+                <div class="row">
+                  <div class="col text-white bg-danger p-5 text-center "><h1>Crystal Collector</h1> </div>
+                </div>
+                <br>
+                
+                 <!-- Instructions Div -->
+                <div class="row">
+                  <div class="col bg-secondary text-white"><h3>Instructions<br></h3>
+                        You will be given a random number at the start of the game.
+                        
+                        Click on the crystals below to add points to your total.
+                        
+                        Win the game by matching your total to the random number. If you go over, you will lose.
+                        
+                        You will not know the value of each crystal until you click on it. When the game restarts, the crystal values will change too.
+                    </div>
+                  
+                </div>
+                <br>
+            
+                <!-- Random Number and Wins - Losses Div -->
+                <div class="row">
+                  <div class="col-6 text-white bg-success randomNumber"></div>
+                  <div class="col-6 text-white bg-primary winLossNumber">Wins &ensp; 0<br>Losses &ensp; 0</div>
+                </div>
+                <br>
+                
+                <!-- Background images-->
+                <div class="row">
+                  <div class="col-3 crystal" id="blueCrystal"> <img  src = "assets/images/blue-crystal.jfif" alt ="blue crystal"> </div>
+                  <div class="col-3 crystal" id="pinkCrystal"> <img src = "assets/images/pink-crystal.jfif" alt ="pink crystal"> </div>
+                  <div class="col-3 crystal" id="yellowCrystal"> <img src = "assets/images/yellow-crystal.jfif" alt ="yellow crystal"> </div>
+                  <div class="col-3 crystal" id="purpleCrystal"> <img class = "blue h-50" src = "assets/images/purple-crystal.jfif" alt ="green crystal"> </div>
+                </div>
+
+                <!-- Your Total Div -->
+                <div class="row">
+                    <div class="col-6 text-dark bg-warning p-3 total">Your Total<br>0</div>
+                    <div class="col-6 text-white WinLossStatus"></div>
+                </div>
+        </div>
+
+    </body>
+</html>
