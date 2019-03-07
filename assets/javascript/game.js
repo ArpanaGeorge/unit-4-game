@@ -30,7 +30,7 @@ $(document).ready(function(){
             wins++;
             // console.log("wims"+wins);
             $(".winLossNumber").html("Wins "+"&ensp;"+wins+"<br>"+"Losses "+"&ensp;"+losses);
-            $(".WinLossStatus").html("You Win "+"<br>"+"Number was "+randNumber+" and Your total was"+yourTotal+"<br>"+ "Click crystals to play again");
+            $(".WinLossStatus").html("You Win "+"<br>"+"Number was "+randNumber+" and Your total was "+yourTotal+"<br>"+ "Click crystals to play again");
             $(".WinLossStatus").css("background-color", "green").slideDown("slow");
             randomNubergeneration();
             reset();
